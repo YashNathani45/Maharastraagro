@@ -158,14 +158,14 @@ export default function HomePage() {
           </p>
 
           {/* Contact Information */}
-          <div className="bg-white rounded-2xl shadow-lg p-8 border border-gray-100 mb-8">
-            <div className="flex flex-col sm:flex-row items-center justify-center gap-8">
+          <div className="bg-white rounded-2xl shadow-lg p-6 sm:p-8 border border-gray-100 mb-8">
+            <div className="flex flex-col sm:flex-row items-center justify-center gap-4 sm:gap-8 w-full">
               {/* Email */}
-              <div className="flex items-center gap-3">
-                <FaEnvelope className="text-[#339d9e] text-xl" />
+              <div className="flex items-center gap-3 max-w-full">
+                <FaEnvelope className="text-[#339d9e] text-xl flex-shrink-0" />
                 <a
                   href="mailto:maharashtraagroequipments2020@gmail.com"
-                  className="text-[#339d9e] hover:text-[#2b7f7f] font-medium transition-colors"
+                  className="text-[#339d9e] hover:text-[#2b7f7f] font-medium transition-colors break-all"
                 >
                   maharashtraagroequipments2020@gmail.com
                 </a>
@@ -173,7 +173,7 @@ export default function HomePage() {
             </div>
 
             {/* Social Media Links */}
-            <div className="flex items-center justify-center gap-6 mt-6 pt-6 border-t border-gray-200">
+            <div className="flex flex-wrap items-center justify-center gap-4 sm:gap-6 mt-6 pt-6 border-t border-gray-200">
               <a
                 href="https://www.facebook.com/share/16weycnyNF/"
                 target="_blank"

@@ -67,7 +67,7 @@ export default function BecomeDealerPage() {
 
     return (
         <div className="bg-white min-h-screen">
-            <MaxWidthWrapper className="py-16">
+            <MaxWidthWrapper className="py-10 sm:py-16">
                 {/* Header */}
                 <div className="text-center mb-12">
                     <Link
@@ -86,10 +86,10 @@ export default function BecomeDealerPage() {
                     </p>
                 </div>
 
-                <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-start">
+                <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-12 items-start">
                     {/* Form Section */}
-                    <Reveal className="bg-white rounded-2xl border border-gray-200 shadow-lg p-8">
-                        <h2 className="text-2xl font-semibold text-gray-800 mb-6">Application Form</h2>
+                    <Reveal className="bg-white rounded-2xl border border-gray-200 shadow-lg p-6 sm:p-8">
+                        <h2 className="text-xl sm:text-2xl font-semibold text-gray-800 mb-4 sm:mb-6">Application Form</h2>
 
                         <form onSubmit={handleSubmit} className="space-y-6">
                             <div>
@@ -215,8 +215,8 @@ export default function BecomeDealerPage() {
 
                     {/* Information Section */}
                     <div className="space-y-8">
-                        <Reveal className="bg-gradient-to-br from-[#339d9e] to-[#2b7f7f] rounded-2xl p-8 text-white">
-                            <h3 className="text-2xl font-semibold mb-4">Why Become Our Dealer?</h3>
+                        <Reveal className="bg-gradient-to-br from-[#339d9e] to-[#2b7f7f] rounded-2xl p-6 sm:p-8 text-white">
+                            <h3 className="text-xl sm:text-2xl font-semibold mb-3 sm:mb-4">Why Become Our Dealer?</h3>
                             <ul className="space-y-3 text-white/90">
                                 <li className="flex items-start">
                                     <span className="text-white mr-2">✓</span>
@@ -241,25 +241,25 @@ export default function BecomeDealerPage() {
                             </ul>
                         </Reveal>
 
-                        <Reveal className="bg-gray-50 rounded-2xl p-8">
+                        <Reveal className="bg-gray-50 rounded-2xl p-6 sm:p-8">
                             <h3 className="text-xl font-semibold text-gray-800 mb-4">Contact Information</h3>
                             <div className="space-y-4">
-                                <div className="flex items-center text-gray-600">
-                                    <Mail className="mr-3 h-5 w-5 text-[#339d9e]" />
-                                    <span>maharastraagroequipments2020@gmail.com</span>
+                                <div className="flex items-start text-gray-600">
+                                    <Mail className="mr-3 h-5 w-5 text-[#339d9e] flex-shrink-0" />
+                                    <span className="break-all">maharastraagroequipments2020@gmail.com</span>
                                 </div>
-                                <div className="flex items-center text-gray-600">
-                                    <Phone className="mr-3 h-5 w-5 text-[#339d9e]" />
+                                <div className="flex items-start text-gray-600">
+                                    <Phone className="mr-3 h-5 w-5 text-[#339d9e] flex-shrink-0" />
                                     <span>+91 8999440768</span>
                                 </div>
-                                <div className="flex items-center text-gray-600">
-                                    <MapPin className="mr-3 h-5 w-5 text-[#339d9e]" />
-                                    <span>Maharashtra Agro Equipments<br />Regd. Office - 558/3B/3 100ft.Road, Sangli</span>
+                                <div className="flex items-start text-gray-600">
+                                    <MapPin className="mr-3 h-5 w-5 text-[#339d9e] flex-shrink-0" />
+                                    <span className="break-words">Maharashtra Agro Equipments<br />Regd. Office - 558/3B/3 100ft.Road, Sangli</span>
                                 </div>
                             </div>
                         </Reveal>
 
-                        <Reveal className="bg-white border border-gray-200 rounded-2xl p-8 shadow-sm">
+                        <Reveal className="bg-white border border-gray-200 rounded-2xl p-6 sm:p-8 shadow-sm">
                             <h3 className="text-xl font-semibold text-gray-800 mb-4">What Happens Next?</h3>
                             <div className="space-y-3 text-gray-600">
                                 <p>1. Submit your application using the form</p>
